@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 datos = pd.read_csv('USArrests.csv')
 columnas = ['Murder', 'Assault', 'UrbanPop','Rape']
 datos2 = datos[columnas]
-datos2 = (datos2 - datos2.mean())/datos.std()
+datos2 = (datos2 - datos2.mean())/datos2.std()
 
 cov_matrix = np.cov(datos2.T)
 
